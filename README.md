@@ -8,19 +8,19 @@ Konverzija .tex > .md > .html > i uređivanje koda
 ## Osnovni pojmovi
 ### [Clean](MD_Files/102_clean.md)
 ### [Radnje](MD_Files/102_radnje.md)
-### [Podaci](MD_Files/103_podaci.md)
+### [Podaci](MD_Files/103.md)
 ### [Moduli](MD_Files/104_moduli.md)
-### [Kontrola toka](MD_Files/105_kontrola_toka.md)
+### [Kontrola toka](MD_Files/105_kond.md)
 
 ## Primjeri programa
-### [Kornjaca](MD_Files/106_ex_kornjaca.md)
+### [Kornjaca](MD_Files/106_ex_kornjaca_proc.md)
 ### [Kalkulator](MD_Files/107_ex_kalkulator_proc.md)
 ### [Pogodi Broj](MD_Files/108_ex_pogodi_broj_proc.md)
 
 ## Rad s tekstom
-### [Tekst putanje datoteke](MD_Files/200_tekst_putanje_datoteke.md)
-### [Tekst intro](MD_Files/106_ex_kornjaca.md)
-### [Tekst python](MD_Files/201_text_intro.md)
+### [Tekst putanje datoteke](MD_Files/200_tekst_putanje_datoteke.tex)
+### [Tekst intro](MD_Files/201_text_intro.md)
+### [Tekst python](MD_Files/202_text_python.md)
 ### [Tekstualne datoteke](MD_Files/203_tekstualne_datoteke.md)
 
 ## Funkcije
