@@ -1,7 +1,7 @@
 # Python_101
 
 ## Instalacija Pythona
-### [Instalacija na Windows OS-u](MD_files/md/101_uvod.md)
+### [Instalacija na Windows OS-u](MD files/md/101_uvod.md)
 ### [Pisanje i izvršavanje Python kôda](MD_files/md/102.md)
 ### [Primjeri](MD_files/md/102_clean.md)
 ### [Moj prvi program](MD_files/md/102_radnje.md)
