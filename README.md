@@ -20,7 +20,7 @@ Konverzija .tex > .md > .html > i uređivanje koda
 ## Rad s tekstom
 ### [Tekst putanje datoteke](MD_Files/200_tekst_putanje_datoteke.md)
 ### [Tekst intro](MD_Files/201_text_intro.md)
-### [Tekst python](MD_Files/202_text_python.md)
+### [Tekst python](MD_Files/202_tekst_python.md)
 ### [Tekstualne datoteke](MD_Files/203_tekstualne_datoteke.md)
 
 ## Funkcije
