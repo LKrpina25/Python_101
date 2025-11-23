@@ -44,6 +44,35 @@ Najjednostavnije rješenje ovog problema je kako slijedi:
 <figcaption>Rezultat programa Kornjača i kvadrat 1</figcaption>
 </figure>
 
+ ```
+ 1 import turtle
+ 2
+ 3 # podesi kornjaču
+ 4 turtle.showturtle() # pokaži prozor
+ 5 turtle.width(3)
+ 6 turtle.speed(1)
+ # postavi širinu linije na 3 piksela
+ # postavi brzinu na sporo crtanje
+ 7
+ 8 # pomakni kornjaču kako treba
+ 9 turtle.forward(100) # kreni napred zadani broj piksela
+ 10 turtle.left(90)
+ # skreni lijevo za 90 stupnjeva
+ 11 turtle.forward(100)
+ 12 turtle.left(90)
+ 13 turtle.forward(100)
+ 14 turtle.left(90)
+ 15 turtle.forward(100)
+ 16 turtle.left(90)
+ 17
+ 18 # spriječi prozor od zatvaranja nakon izvršenja
+ 19 turtle.done()
+``` 
+**Slika 6:** Rezultat programa kornjača i kvadrat 1
+
+
+![Slika 6: Rezultat programa kornjača i kvadrat 1](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_square.png)
+
 Ovo rješenje radi što treba, ali je strukturalno loš program. Prvi
 problem je što se dvije posve iste naredbe, odnosno naredbe koje se
 sastoje od poziva na iste funkcije s istim parametrima, se u paru
@@ -170,5 +199,6 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
