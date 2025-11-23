@@ -159,7 +159,7 @@ sučelja za instalaciju *desktop* aplikacija. Na slici
 [1](#fig:wininstall){reference-type="ref" reference="fig:wininstall"}
 vidimo kako izgleda pokretanje instalacije novijih verzija Pythona.
 
-![Instalacija Pythona na Windows OS-u](windows_install){#fig:wininstall
+![Instalacija Pythona na Windows OS-u](Slike/images/windows_install.png){#fig:wininstall
 width="\\textwidth"}
 
 Dok klik na \"Install Now\" obavlja većinu posla, ipak je korisno
