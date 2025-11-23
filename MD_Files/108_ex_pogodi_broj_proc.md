@@ -1,4 +1,4 @@
-\## Pogodi broj
+## Pogodi broj
 
 Implementirajmo još jedan jednostavan program: igru "pogodi broj."
 Zamislimo prvo ovu igru kao da je igraju dvije osobe. Jedan igrač tajno
@@ -12,21 +12,21 @@ dodatne informacije za pogađanje broja.
 Kako ovo isprogramirati? Korisno je prvo riječima opisati
 najjednostavniji oblik ovog programa.
 
-1ṗrogram mora odabrati slučajan broj u određenom rasponu
+1. ṗrogram mora odabrati slučajan broj u određenom rasponu
 
-2ṗrogram mora obavijestiti korisnika o tome u kojem rasponu se traži
+2. ṗrogram mora obavijestiti korisnika o tome u kojem rasponu se traži
 broj
 
-3k̇orisnik mora unijeti neki broj
+3. k̇orisnik mora unijeti neki broj
 
-4ṗrogram mora provjeriti da li je taj broj odabrani broj i zatim:
+4. ṗrogram mora provjeriti da li je taj broj odabrani broj i zatim:
 
-1ȧko je korisnik pogodio broj, ispisati mu da je uspješno završio igru
+    a) ȧko je korisnik pogodio broj, ispisati mu da je uspješno završio igru
 
-2ȧko korisnik nije pogodio broj, ispisati mu da li je traženi broj veći
+    b) ȧko korisnik nije pogodio broj, ispisati mu da li je traženi broj veći
 ili manji i zatražiti ga da unese novi broj
 
-5k̇oraci 3. i 4. se moraju ponavljati sve dok korisnik ne uspije pogoditi
+5. k̇oraci 3. i 4. se moraju ponavljati sve dok korisnik ne uspije pogoditi
 broj
 
 Kao što vidimo, u ovom programu potrebna nam je mogućnost odabira nekog
@@ -106,3 +106,4 @@ dozvoljenom broju pokušaja!
 /div
 
 Ovaj program je sada više-manje gotov.
+
