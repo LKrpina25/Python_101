@@ -39,11 +39,7 @@ skriptu!
 
 Najjednostavnije rješenje ovog problema je kako slijedi:
 
-<figure id="fig:turtle_square" data-latex-placement="H">
-<img src="turtle_square" style="width:50.0%" />
-<figcaption>Rezultat programa Kornjača i kvadrat 1</figcaption>
-</figure>
-
+**Primjer kornjača i kvadrat 1**
  ```
  1 import turtle
  2
@@ -86,6 +82,43 @@ a riječ je o banalno jednostavnom primjeru. Pogledajmo rješenje koje te
 vrijednosti izdvaja ranije kako bi njima bilo lakše baratati te koristi
 petlju za izbjegavanje ponavljanja kôda.
 
+**Primjer kornjača i kvadrat 2**
+```
+ 1 import turtle
+ 2
+ 3 # ZADAJ ULAZNE VRIJEDNOSTI
+ 4 # kako bi bile vidljivije i jednostavnije za mijenjati
+ 5
+ 6 # postavke kornjače
+ 7 line_width = 3
+ 9
+ 10 # postavke kvadrata, odnosno zadavanje podataka za kretanje
+ 11 n_steps = 4
+ # stupanj pod kojim se skreće
+ 13 move_length = 100 # duljina kretanja, u ovom slučaju definira stranicu kvadrata
+ 8 speed = 1
+ 12 turn_angle = 90
+ # debljina linije
+ # brzina kornjače
+ # broj koraka koji će kornjača napraviti
+ 14
+ 15 # IZVEDI PROGRAM
+ 16 # pokreni kornjaču i namijesti postavke
+ 17 turtle.showturtle()
+ 18 turtle.width(line_width)
+ 19 turtle.speed(speed)
+ 20
+ 24
+ 25
+ 21 # iskoristi petlju kako bi iste dvije naredbe ponovio četiri puta
+ 22 # u petlji se koriste samo varijable čije vrijednosti smo organizirali drugdje
+ 23 for i in range(n_steps):
+ turtle.forward(move_length)
+ turtle.left(turn_angle)
+ 26
+ 27 turtle.done()
+```
+
 Na ovaj način jasno su nam odvojeni podaci i proces samog crtanja, a
 proces crtanja ne samo da izbjegava ponavljanje kôda već i omogućuje
 laku promjenu broja koraka kornjače. To ne samo da nam olakšava promjene
@@ -93,7 +126,8 @@ ovog programa, već nam i otvara nove mogućnosti.
 
 <div class="important">
 
-Ponavljajte petljom i odvojite podatke od logike Izbjegavajte
+Ponavljajte petljom i odvojite podatke od logike
+Izbjegavajte
 ponavljanje istih naredbi dupliciranjem. Tome služi petlja. Također,
 odvajajte podatke od logike jer ih je tako lakše kasnije saznati i
 mijenjati. Navedeno olakšava održavanje i promjene te umanjuje mogućnost
@@ -105,28 +139,46 @@ U postavkama sada možemo namjestiti crtanje bilo kojeg pravilnog
 poligona. Pogledajmo primjere za trokut i heksagon.
 
 <div class="pythonp">
-
-Kornjača i trokut \# ... n_steps = 3 \# broj koraka koji će kornjača
-napraviti turn_angle = 120 \# stupanj pod kojim se skreće \# ...
-
+**Kornjača i trokut**
+ 
+```
+# ...
+n_steps = 3                 # broj koraka koji će kornjača
+napraviti turn_angle = 120  # stupanj pod kojim se skreće
+# ...
+```
 </div>
 
-<figure id="fig:turtle_triangle" data-latex-placement="H">
-<img src="turtle_triangle" style="width:50.0%" />
-<figcaption>Rezultat programa Kornjača i trokut</figcaption>
-</figure>
+
+
+
+**Slika 7: Rezultat programa Kornjača i trokut.**
+
+
+![Slika 7: Rezultat programa Kornjača i trokut](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_triangle.png)
 
 <div class="pythonp">
+ 
+**Kornjača i heksagon**
 
-Kornjača i heksagon \# ... n_steps = 6 \# broj koraka koji će kornjača
-napraviti turn_angle = 60 \# stupanj pod kojim se skreće \# ...
+```
+# ...
+n_steps = 6                # broj koraka koji će kornjača
+napraviti turn_angle = 60  # stupanj pod kojim se skreće 
+# ...
+```
 
 </div>
 
-<figure id="fig:turtle_heksagon" data-latex-placement="H">
-<img src="turtle_hex" style="width:50.0%" />
-<figcaption>Rezultat programa Kornjača i heksagon</figcaption>
-</figure>
+**Slika 8: Rezultat programa Kornjača i heksagon.**
+
+
+
+
+
+![Slika 8: Rezultat programa Kornjača i heksagon](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_hex.png)
+
+
 
 Dapače, ukoliko razmislimo i prisjetimo se malo rudimentarne
 trigonometrije (ili pronađemo formule *online*), stupanj skretanja
@@ -134,6 +186,42 @@ možemo automatski izračunati iz broja stranica čime više ni tu
 vrijednost nije potrebno namještati. Dorađeni program, koji se u
 potpunosti bazira na poligonima i napustio je koncept kvadrata vidimo
 niže.
+
+**Primjer Kornjača i Poligon**
+
+```
+ 1 import turtle
+ 2
+ 3 # ZADAJ ULAZNE VRIJEDNOSTI
+ 4 # kako bi bile vidljivije i jednostavnije za mijenjati
+ 5
+ 6 # postavke poligona
+ 7 n_sides = 15
+ # preimenovano iz n_moves kako bi bilo preciznije
+ 8 side_length = 100 # preimenovano iz move_length kako bi bilo preciznije
+ 9
+ 71
+10 # postavke kornjače
+ 11 line_width = 3
+ 12 speed = 1
+ 13
+ 14 # izračunate vrijednosti
+ 15 turn_angle = 360 / n_sides # turn_angle se sada računa iz n_sides
+ 16
+ 17 # IZVEDI PROGRAM
+ 18 # ostatak kôda je isti osim što su neke varijable preimenovane
+ 19 turtle.showturtle()
+ 20 turtle.width(line_width)
+ 21 turtle.speed(speed)
+ 22
+ 23 for i in range(n_sides):
+ 24
+ 25
+ 26
+ turtle.forward(side_length)
+ turtle.left(turn_angle)
+ 27 turtle.done()
+```
 
 Program je sada postavljen da crta pravilne poligone bilo kojeg broja
 stranica. Ima međutim još jedan problem, unosi su postavljeni tako da
@@ -145,10 +233,13 @@ broj stranica, tako raste i veličina. Na slici
 data-reference="fig:turtle_big_poly">5</a> vidimo poligon koji je
 pobjegao s ekrana.
 
-<figure id="fig:turtle_big_poly" data-latex-placement="ht">
-<img src="turtle_big_poly" style="width:75.0%" />
-<figcaption>Interaktivan rad s kornjačom</figcaption>
-</figure>
+**Slika 9: Interaktivan rad s kornjačom.**
+
+
+
+![Slika 9: Interaktican rad s kornjačom](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_big_poly.png)
+
+
 
 Što ukoliko želimo da nam svi poligoni imaju istu veličinu bez ručnog
 podešavanja dužine stranice? Obzirom da su nam ulazne vrijednosti u kôdu
@@ -157,6 +248,39 @@ radije no promjenama u toku programa. Možemo, na primjer, postaviti da
 je radijus, a ne dužina stranice, osnovna ulazna vrijednost. Dužinu
 stranice možemo zatim izračunati. Pogledajmo kako.
 
+**Primjer 6.4: Kronjača i poligon 2.**
+
+```
+ 1 import turtle
+ 2 import math # treba nam funkcija za sinus, odnosno math.sin
+ 3
+ 4 # ZADAJ ULAZNE VRIJEDNOSTI
+ 5 # kako bi bile vidljivije i jednostavnije za mijenjati
+ 6
+ 7 # ulazne vrijednosti
+ 8 n_sides = 8
+ 9 radius = 100
+ 10
+ 11 # postavke kornjače
+ 12 line_width = 3
+ 13 speed = 1
+ 14
+ 15 # izračunate vrijednosti
+ 16 turn_angle = 360 / n_sides
+ 17 side_length = 2 * radius * math.sin(math.pi / n_sides)
+ 18
+ 19 # IZVEDI PROGRAM
+ 20 # kôd je isti kao i prije!
+ 21 turtle.showturtle()
+ 22 turtle.width(line_width)
+ 23 turtle.speed(speed)
+ 24
+ 25 for i in range(n_sides):
+ 26
+ 27
+ 28
+ 29 turtle.done()
+```
 Dodali smo samo formulu za izračun dužine stranice iz radijusa. Na ovaj
 način kad crtamo poligone istog radijusa, oni ne rastu s brojem
 stranica. Dok ovaj kod prikazuje svrsishodnu upotrebu trigonometrije u
@@ -190,15 +314,16 @@ kliknemo na "start", dobiti ćemo sliku
 <a href="#fig:turtle_examples" data-reference-type="ref"
 data-reference="fig:turtle_examples">6</a>.
 
-<figure id="fig:turtle_examples" data-latex-placement="ht">
-<img src="turtle_examples" />
-<figcaption>Napredni primjeri mogućnosti s kornjačom</figcaption>
-</figure>
+**Slika 10: Napredni primjeri mogućnosti s kornjačom.**
+
+
+![Slika 10: Napredni primjeri mogućnosti s kornjačom](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_examples.png)
 
 Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
