@@ -245,7 +245,7 @@ radnje je vidljiv na slici [4](#fig:idle_text_run){reference-type="ref"
 reference="fig:idle_text_run"}.
 
 ![IDLE i rezultat izvršavanja
-programa](idle_text_run){#fig:idle_text_run width="\\textwidth"}
+programa](https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text_run.png)
 
 Upravo smo izvršili računalni program! Ovu datoteku nismo morali
 pokretati kroz IDLE, mogli smo je i jednostavno pokrenuti direktno iz
