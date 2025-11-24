@@ -8,9 +8,13 @@ piksela" ili "skreni lijevo za 45 stupnjeva". Kornjača se najčešće
 prikazuje kao strelica, a vrlo je lako s njom početi eksperimentirati i
 interaktivno.
 
+<p align="center">
+ <strong>Slika 5:</strong> Interaktivan rad s kornjačom.
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_idle.png" alt="Slika 5: Interaktivan rad s kornjačom">
+  <br>
+ 
+</p>
 
-**Slika 5:** Interaktivan rad s kornjačom.
-![Slika 5: INteraktivan rad s kornjačom](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_idle.png)
 
 Kornjača živi u modulu `turtle`, a prozor u kojem je vizualizacija se
 može pokrenuti s naredbom `turtle.showturtle()`. Osnovne naredbe za
@@ -323,6 +327,7 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
