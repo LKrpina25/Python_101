@@ -159,7 +159,13 @@ sučelja za instalaciju *desktop* aplikacija. Na slici
 [1](#fig:wininstall){reference-type="ref" reference="fig:wininstall"}
 vidimo kako izgleda pokretanje instalacije novijih verzija Pythona.
 
-![Instalacija Pythona na Windows OS-u](https://github.com/LKrpina25/Python_101/blob/main/Slike/windows_install.png)
+
+<p align="center">
+  <strong>Slika 1:</strong> Instalacija Pythona na Windows OS-u
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/windows_install.png" alt="Slika 1: Instalacija Pythona na Windows OS-u" width="600">
+</p>
+
 
 Dok klik na \"Install Now\" obavlja većinu posla, ipak je korisno
 primijetiti neke detalje i uključiti dodatne mogućnosti. Python će se po
@@ -207,7 +213,13 @@ koncepata i eksperimentaciju s mogućnostima. IDLE se ponaša kao i većina
 aplikacija s grafičkim sučeljem, odnosno moguće ju je pokrenuti kroz
 *Start menu* ili ekvivalente u drugim operativnim sustavima.
 
-![Izvršavanje Python kôda putem sučelja IDLE](https://github.com/LKrpina25/Python_101/blob/main/Slike/idle.png)
+
+
+<p align="center">
+  <strong>Slika 2:</strong> Izvršavanje Python kôda putem sučelja IDLE
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle.png" alt="Slika 2:Izvršavanje Python kôda putem sučelja IDLE" width="600">
+</p>
 
 Kada pokrenemo IDLE, dočekati će nas glavno sučelje ovog programa koje
 je prikazano na slici [2](#fig:idle){reference-type="ref"
@@ -231,7 +243,20 @@ je vidljivo na slici [3](#fig:idle_text){reference-type="ref"
 reference="fig:idle_text"}. Datoteka sadrži tipičan program za prvi
 susret s programiranjem koji ćemo kasnije podrobnije analizirati.
 
-![IDLE i pisanje tekstualnih datoteka](https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text.png)
+
+
+
+
+<p align="center">
+  <strong>Slika 3:</strong> IDLE i pisanje tekstualnih datoteka.
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text.png" alt="Slika 3: IDLE i pisanje tekstualnih datoteka">
+</p>
+
+
+
+
+
 
 Novi prozor koji nam se otvorio je jednostavan program za pisanje
 tekstualnih datoteka (poput Notepada i sličnog softvera), a ne komandna
@@ -244,8 +269,12 @@ asketske prirode pa neke verzije ne paze na to umjesto nas. Rezultat ove
 radnje je vidljiv na slici [4](#fig:idle_text_run){reference-type="ref"
 reference="fig:idle_text_run"}.
 
-![IDLE i rezultat izvršavanja
-programa](https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text_run.png)
+<p align="center">
+  <strong>Slika 4:</strong> IDLE i rezultat izvršavanja programa
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text_run.png" alt="IDLE i rezultat izvršavanja programa">
+</p>
+
 
 Upravo smo izvršili računalni program! Ovu datoteku nismo morali
 pokretati kroz IDLE, mogli smo je i jednostavno pokrenuti direktno iz
