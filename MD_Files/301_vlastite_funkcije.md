@@ -17,7 +17,7 @@ Već smo rekli da funkcija prima nula ili više parametara, na temelju
 njih izvršava određen kôd te vraća rezultat. Pogledajmo kako ovo izgleda
 u praksi prilikom definicije jednostavne vlastite funkcije.
 
-```
+```python
 # def služi definiciji novih funkcija
 def sum_two(x, y):
     # return označava kraj izvršavanja funkcije kao vrijednost koja se se smatra rezultatom
@@ -57,3 +57,4 @@ Kako bismo mogli definirati funkciju koja zbraja više od jednog broja
 odnosno koja oponaša već postojeću funkciju `sum`?
 
 def sum(numbers): total = 0 for n in numbers: total += n return total
+
