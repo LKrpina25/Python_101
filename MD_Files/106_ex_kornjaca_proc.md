@@ -72,11 +72,11 @@ Najjednostavnije rješenje ovog problema je kako slijedi:
 
 
 <p align="center">
- <strong>Slika 6:</strong> Rezultat programa kornjača i kvadrat.
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_square.png" alt="Slika 6: Rezultat programa kornjača i kvadrat">
-  <br>
- 
+  <strong>Slika 6:</strong> Rezultat programa kornjača i kvadrat.
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_square.png" alt="Slika 6: Rezultat programa kornjača i kvadrat" width="600">
 </p>
+
 
 Ovo rješenje radi što treba, ali je strukturalno loš program. Prvi
 problem je što se dvije posve iste naredbe, odnosno naredbe koje se
@@ -329,6 +329,7 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
