@@ -16,43 +16,100 @@ Kondicionali služe *odabiru* kôda koji će se izvršiti. Kada su neke linije o
     netočan, a u svim ostalim slučajevima javi da odgovor nije
     prepoznat.
 
-Kondicionali služe uvjetnom izvršavanju kôda. Oni prema određenim uvjetima odabiru koji će se reci izvršiti, a koji ne.
+Kondicionali služe uvjetnom izvršavanju kôda. Oni prema određenim uvjetima odabiru koji će se redak izvršiti, a koji ne.
 
-Kondicionale u programskim jezicima tipično reprezentiramo sa složenom izjavom `if`{.python}, a minimalan oblik te izjave u Pythonu je:
+Kondicionale u programskim jezicima tipično reprezentiramo sa složenom izjavom `if`, a minimalan oblik te izjave u Pythonu je:
 
-Najjednostavniji oblik kondicionala
+## Najjednostavniji oblik kondicionala
 
-listing:kondicional1 if \<izraz\>:
-neka radnja
+```python
+# listing:kondicional1
+if <izraz>:
+    neka_radnja
 
-\"Neka radnja\" se izvršava samo ako izraz rezultira vrijednošću koja se procjenjuje kao `True`{.python} (vidi poglavlje o booleovim vrijednostima za detalje). Ova radnja se mora sastojati od barem jedne linije kôda, ali može se sastojati i od više njih. Konkretnije, ispod svake `if`{.python} izjave se očekuje uvučeni blok kôda. Taj blok koda, kao što je već rečeno, se naznačuje tako što su sve linije u bloku jednako uvučene i izvršava se samo ako je uvjet zadovoljen, a u suprotnom se preskače.
+# Kondicionali u Pythonu
 
-Što se uvlačenja kôda tiče, u Pythonu se uvijek uvlači nakon dvotočke koja se, između ostalog, koristi u kondicionalima i petljama. Općenito je pravilo da Python nakon retka koji završava s dvotočkom očekuje barem jednu uvučen redak kôda odnosno minimalan blok kôda.
+```python
+# Osnovni if
+if <izraz>:
+    neka_radnja
+```
+"Neka radnja" se izvršava samo ako izraz rezultira vrijednošću koja se procjenjuje kao True
+(vidi poglavlje o booleovim vrijednostima za detalje).
+Ova radnja se mora sastojati od barem jedne linije kôda, ali može se sastojati i od više njih.
+Ispod svake if izjave očekuje se uvučen blok kôda. Taj blok koda se naznačuje tako da su sve linije u bloku jednako uvučene i izvršava se samo ako je uvjet zadovoljen, a u suprotnom se preskače.
 
-Standard u Pythonu je kôd uvlačiti sa četiri razmaka koji se u prilagođenom softveru dobivaju pritiskom na tipku \"tabulator\" odnosno \"tab\". Ovaj koncept se naziva \"mekanim tabulatorom\" (eng. *soft tab*) jer služi istome čemu služi i sam znak tabulator, ali izbjegava taj znak (što ima i smisla jer je tabulator po definiciji razmak varijabilne dužine). Moguće je koristiti i znak tabulator, ali se treba pobrinuti da se ne miješaju tabulatori i razmaci. Navedeno zvuči kompleksnije no što je slučaj u praksi jer se za ujednačenost uglavnom pobrine softver u kojem programiramo.
+Uvlačenje kôda
+U Pythonu se uvijek uvlači nakon dvotočke (:) koja se koristi u kondicionalima i petljama.
+Python nakon retka koji završava s dvotočkom očekuje barem jednu uvučenu liniju kôda (minimalan blok).
 
-Moguće je napisati i kondicional koji će uvijek izvršiti neki kôd tako što ga proširimo s komponentom `else`{.python} koja znači \"u svim ostalim slučajevima\".
+Standard u Pythonu je uvlačiti kôd sa četiri razmaka (tipka Tab obično daje soft tab).
+Moguće je koristiti i znak tabulatora, ali se treba pobrinuti da se ne miješaju tabulatori i razmaci.
 
-Kondicional koji će uvijek izvršiti radnjulisting:kondicional3 if \<izraz\>: neka radnja else: \# u svim ostalim slučajevima neka druga radnja
+else blok
+Moguće je napisati kondicional koji će uvijek izvršiti neki kôd pomoću else:
 
-U ovom obliku, \"neka radnja\" se izvršava kao i u prošlom, ali ako se ne izvrši, tada će se izvršiti \"neka druga radnja\". Drugim riječima ovakav kondicional će, za razliku od prošlog oblika, uvijek izvršiti neke naredbe. Pogledajmo neke konkretne primjere:
+``` python
+if <izraz>:
+    neka_radnja
+else:
+    # u svim ostalim slučajevima
+    neka_druga_radnja
+```
+Ovakav kondicional će uvijek izvršiti neke naredbe.
 
-Primjer prikazuje tri kondicionala. Prvi kondicional radi nešto samo ako je uvjet zadovoljen. Druga dva kondicionala uvijek rade nešto jer imaju komponentu `else`{.python} čiji kôd se izvršava kada niti jedan drugi uvjet nije zadovoljen. Izvršavanje prikazanog koda, dakle, ispisati će dvije ili tri rečenice jer prvi prikazani kondicional nema komponentu `else`{.python} dok druga dva imaju. Koje su to?
+Primjer prikazuje tri kondicionala:
 
-[\[listing:kondicional4\]](#listing:kondicional4){reference-type="ref" reference="listing:kondicional4"} x je veće ili jednako y x + y je manje od 10
+Prvi kondicional radi nešto samo ako je uvjet zadovoljen.
 
-U prijašnjem primjeru svi izrazi koji se pojavljuju kao uvjeti se evaluiraju u booleove vrijednosti. Kad želimo vidjeti rezultat određenog izraza najjednostavnije je to probati u Python komandnoj liniji.
+Druga dva kondicionala uvijek rade nešto jer imaju komponentu else.
 
-Što bi se dogodilo da smo koristili izraze koji se ne evaluiraju u booleovu vrijednost poput `x + y`{.python}? U Pythonu je za potrebe kondicionala moguće i implicitno pretvoriti bilo koju vrijednosti u booleovu vrijednost. Drugim riječima, izjava `if vrijednost:`{.python} se izvršava kao da smo pisali `if bool(vrijednost):`{.python}. Sjetimo se, izraz se uvijek evaluira u vrijednost pa ranije napisano ujedno znači i `if bool(izraz)`{.python}. Pogledajmo primjer:
+Evaluacija izraza
+Svi izrazi koji se pojavljuju kao uvjeti evaluiraju se u booleove vrijednosti.
+Ako želimo provjeriti rezultat izraza, najjednostavnije je probati u Python komandnoj liniji:
 
-[\[listing:kondicional5\]](#listing:kondicional5){reference-type="ref" reference="listing:kondicional5"} bool(b) se evaluira u True bool(x + y) se evaluira u True
+```python
+# Primjer evaluacije
+bool(b)          # evaluira se u True ili False
+bool(x + y)      # evaluira se u True ili False
+```
+U Pythonu je moguće implicitno pretvoriti bilo koju vrijednost u booleovu vrijednost:
 
-Kako možemo napisati kondicional koji ima više od jednog eksplicitnog uvjeta (ne računajući `else`{.python})? U kondicionalima se često koriste dodatne komponente *else if* koje služe upravo ovome. Python te riječi skraćuje u riječ `elif`{.python}. Kondicional sa svim dozvoljenim komponentama izgleda ovako:
+```python
+if vrijednost:
+    # isto kao if bool(vrijednost):
+Više uvjeta: elif
+```
+Python koristi elif za više uvjeta (umjesto else if):
 
-Kondicional sa svim komponentamalisting:kondicional6 if \<izraz1\>: radnja 1 elif \<izraz2\>: radnja 2 elif \<izraz3\>: radnja 3 \... else: radnja n
+```python
+if <izraz1>:
+    radnja1
+elif <izraz2>:
+    radnja2
+elif <izraz3>:
+    radnja3
+...
+else:
+    radnja_n
+```
+Primjer:
 
-A evo i konkretnog primjera kondicionala sa svim komponentama:
+```python
+# Kondicional sa svim komponentama
+x = 3
 
-[\[listing:kondicional6\]](#listing:kondicional6){reference-type="ref" reference="listing:kondicional6"} slučaj \"x je 3\"
+if x == 1:
+    print("x je 1")
+elif x == 2:
+    print("x je 2")
+elif x == 3:
+    print("x je 3")
+else:
+    print("x je neki drugi broj")
+```
+Drugim riječima, svaki kondicional ima nužno jedan `if` slučaj, a može imati i bilo koji broj `elif` slučajeva i jedan `else` slučaj.  
 
-Drugim riječima, svaki kondicional ima nužno jedan `if`{.python} slučaj, a može imati i bilo koji broj `elif`{.python} slučajeva i jedan `else`{.python} slučaj. Ovakav kondicional smo već vidjeli u primjeru [\[listing:kviz\]](#listing:kviz){reference-type="ref" reference="listing:kviz"}, a u idućim poglavljima ćemo za vježbu isprogramirati nešto konkretnije i iskoristiti kondicionale. Upoznajmo se ipak prije toga i s petljama i pokušajima kako bismo zaokružili koncept \"kontrole toka\".
+Ovakav kondicional smo već vidjeli u primjeru [listing:kviz](#listing:kviz), a u idućim poglavljima ćemo za vježbu isprogramirati nešto konkretnije i iskoristiti kondicionale.  
+
+Upoznajmo se ipak prije toga i s petljama i pokušajima kako bismo zaokružili koncept "kontrole toka".
