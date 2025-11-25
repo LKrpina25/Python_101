@@ -41,25 +41,26 @@ Pokušajte sami implementirati opisani program prije no što nastavite
 
 Kada pokrenemo prikazani program i unosimo brojeve sve dok ne pogodimo
 traženi broj ispis izgleda otprilike ovako:
+
 ```python
-Pogodi broj između 1 i 100.
+# Pogodi broj između 1 i 100.
 
-Pogodi broj: 50  
+>>> Pogodi broj: 50
 Nije točno! Broj je veći.
 
-Pogodi broj: 75  
+>>> Pogodi broj: 75
 Nije točno! Broj je veći.
 
-Pogodi broj: 87  
+>>> Pogodi broj: 87
 Nije točno! Broj je veći.
 
-Pogodi broj: 95  
+>>> Pogodi broj: 95
 Nije točno! Broj je veći.
 
-Pogodi broj: 97  
+>>> Pogodi broj: 97
 Nije točno! Broj je manji.
 
-Pogodi broj: 96  
+>>> Pogodi broj: 96
 BRAVO!
 ```
 
@@ -101,26 +102,27 @@ program će se ponašati identično i njegovo izvršavanje može proizvesti
 sljedeći ispis:
 
 ```python
-Pogodi broj između 1 i 100.
+# Pogodi broj između 1 i 100.
 
-Pogodi broj (pokušaj 1/5): 50  
+>>> Pogodi broj (pokušaj 1/5): 50
 Nije točno! Broj je veći.
 
-Pogodi broj (pokušaj 2/5): 75  
+>>> Pogodi broj (pokušaj 2/5): 75
 Nije točno! Broj je veći.
 
-Pogodi broj (pokušaj 3/5): 87  
+>>> Pogodi broj (pokušaj 3/5): 87
 Nije točno! Broj je veći.
 
-Pogodi broj (pokušaj 4/5): 94  
+>>> Pogodi broj (pokušaj 4/5): 94
 Nije točno! Broj je manji.
 
-Pogodi broj (pokušaj 5/5): 90  
+>>> Pogodi broj (pokušaj 5/5): 90
 Nije točno! Broj je veći.
 
 Nisi uspio pogoditi traženi broj u dozvoljenom broju pokušaja!
 ```
 
 Ovaj program je sada više-manje gotov.
+
 
 
