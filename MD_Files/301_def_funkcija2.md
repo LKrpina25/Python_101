@@ -13,7 +13,7 @@ grešaka u kôdu. Definicija vlastitih funkcija je stoga ne samo uobičajen
 nego i praktički nužan postupak prilikom implementacije većih programa.
 Pogledajmo jednostavan primjer:
 
-```
+```python
 # "def" služi definiciji novih funkcija
 def sum(numbers):
     total = 0
@@ -81,3 +81,4 @@ prikazuje što ovo znači u praksi:
 
 Kako bismo mogli definirati funkciju koja zbraja više od jednog broja
 odnosno koja oponaša već postojeću funkciju `sum`?
+
