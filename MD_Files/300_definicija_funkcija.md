@@ -61,28 +61,30 @@ datoteku kako bi imali što čitati. Također, parametar ‘"r"\` zapravo ne
 treba navoditi jer se podrazumijeva, ali njegovim navođenjem se mod rada
 jasnije vidi.
 
-\<div class="pythonp"\>
+**[listing:tekst_citanje]**
 
-\<a href="#listing:tekst_citanje" data-reference-type="ref"
-data-reference="listing:tekst_citanje"\>\[listing:tekst_citanje\]\</a\>
-This parrot is no more! He has ceased to be! ’E’s expired and gone to
-meet ’is maker! ’Is metabolic processes are now ’istory! ’E’s off the
-twig! ..... THIS IS AN EX-PARROT!!
-
-\</div\>
+```python
+# Program output
+>>> This parrot is no more! He has ceased to be!
+>>> 'E's expired and gone to meet 'is maker!
+>>> 'Is metabolic processes are now 'istory!
+>>> 'E's off the twig! ..... THIS IS AN EX-PARROT!!
+```
 
 Pogledajmo kako se petlja ‘for‘ može koristiti u kontekstu čitanja
 teksta iz datoteke:
 
-\<div class="pythonp"\>
+**[listing:tekst_prebiranje]**
 
-\<a href="#listing:tekst_prebiranje" data-reference-type="ref"
-data-reference="listing:tekst_prebiranje"\>\[listing:tekst_prebiranje\]\</a\>
-1 This parrot is no more! 2 He has ceased to be! 3 ’E’s expired and gone
-to meet ’is maker! 4 ’Is metabolic processes are now ’istory! 5 ’E’s off
-the twig! 6 ..... THIS IS AN EX-PARROT!!
-
-\</div\>
+```python
+# Program output
+>>> 1 This parrot is no more!
+>>> 2 He has ceased to be!
+>>> 3 'E's expired and gone to meet 'is maker!
+>>> 4 'Is metabolic processes are now 'istory!
+>>> 5 'E's off the twig!
+>>> 6 ..... THIS IS AN EX-PARROT!!
+```
 
 Drugim riječima, po otvorenoj datoteci se može iterirati po recima
 teksta. Na ovaj način možemo raditi s datotekama bilo koje veličine pa
@@ -119,3 +121,4 @@ datoteka. Također, postoje slučajevi u kojima je korištenje naredbe
 \[^1\]: Za vježbu razmislite kako bismo naredbom ‘try‘ mogli
 \*garantirati\* izvršavanje pozivanje metode ‘close‘ čak i u slučaju
 ranije pogreške
+
