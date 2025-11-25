@@ -208,41 +208,46 @@ oduzimati, ali demonstrira nam mnoge različite koncepte u programiranju.
 Omogućava ponovljene radnje i otporan je na najčešće korisničke greške.
 Korištenje programa sada izgleda ovako:
 
-<div class="pythonp">
+[listing:calc_while]
+----------------------------------------
 
-<a href="#listing:calc_while" data-reference-type="ref"
-data-reference="listing:calc_while">[listing:calc_while]</a> ———-
-
-Odaberi operator (+,-) ili unesi "i" za izlaz: + Unesi prvi broj: 3.14
-Unesi drugi broj: 25
+Odaberi operator (+,-) ili unesi "i" za izlaz: +  
+Unesi prvi broj: 3.14  
+Unesi drugi broj: 25  
 
 Rezultat je: 28.14
 
-———-
+----------------------------------------
 
-Odaberi operator (+,-) ili unesi "i" za izlaz: - Unesi prvi broj: 2
-Unesi drugi broj: 7
+Odaberi operator (+,-) ili unesi "i" za izlaz: -  
+Unesi prvi broj: 2  
+Unesi drugi broj: 7  
 
 Rezultat je: -5.0
 
-———-
+----------------------------------------
 
-Odaberi operator (+,-) ili unesi "i" za izlaz: x
+Odaberi operator (+,-) ili unesi "i" za izlaz: x  
 
 GREŠKA: Odabrana je nepoznata operacija, pokušaj ponovo!
 
-———-
+----------------------------------------
 
-Odaberi operator (+,-) ili unesi "i" za izlaz: + Unesi prvi broj: 42
-Unesi drugi broj: neću
+Odaberi operator (+,-) ili unesi "i" za izlaz: +  
+Unesi prvi broj: 42  
+Unesi drugi broj: neću  
 
 GREŠKA: Oblik broja nije prepoznat! Pokušaj ponovo.
 
-———-
+----------------------------------------
 
-Odaberi operator (+,-) ili unesi "i" za izlaz: I
+Odaberi operator (+,-) ili unesi "i" za izlaz: I  
 
-———- Program je završio s radom, pritisni \<enter\> za kraj.
+Program je završio s radom, pritisni <enter> za kraj.  
+
+----------------------------------------
+
+
 
 </div>
 
@@ -266,3 +271,4 @@ ovaj problem kad budemo naoružani znanjem kako kôd generalizirati i
 apstrahirati.
 
 [^1]: Koju vrstu vrijednosti vraća funkcija `input`?
+
