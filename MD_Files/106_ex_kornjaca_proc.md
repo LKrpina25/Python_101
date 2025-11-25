@@ -44,7 +44,8 @@ skriptu!
 Najjednostavnije rješenje ovog problema je kako slijedi:
 
 **Primjer kornjača i kvadrat 1**
- ```
+
+ ``` python
  1 import turtle
  2
  3 # podesi kornjaču
@@ -92,7 +93,8 @@ vrijednosti izdvaja ranije kako bi njima bilo lakše baratati te koristi
 petlju za izbjegavanje ponavljanja kôda.
 
 **Primjer kornjača i kvadrat 2**
-```
+
+``` python
  1 import turtle
  2
  3 # ZADAJ ULAZNE VRIJEDNOSTI
@@ -147,16 +149,14 @@ pogrešaka u većim programima.
 U postavkama sada možemo namjestiti crtanje bilo kojeg pravilnog
 poligona. Pogledajmo primjere za trokut i heksagon.
 
-<div class="pythonp">
 **Kornjača i trokut**
  
-```
+``` python
 # ...
 n_steps = 3                 # broj koraka koji će kornjača
 napraviti turn_angle = 120  # stupanj pod kojim se skreće
 # ...
 ```
-</div>
 
 <p align="center">
  <strong>Slika 7:</strong> Rezultat programa Kornjače i trokuta.
@@ -168,7 +168,7 @@ napraviti turn_angle = 120  # stupanj pod kojim se skreće
  
 **Kornjača i heksagon**
 
-```
+``` python
 # ...
 n_steps = 6                # broj koraka koji će kornjača
 napraviti turn_angle = 60  # stupanj pod kojim se skreće 
@@ -182,7 +182,7 @@ napraviti turn_angle = 60  # stupanj pod kojim se skreće
   <br><br>
   <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_hex.png" alt="Slika 8: Rezultat programa kornjača i heksagon" width="600">
 
-
+</p>
 
 
 Dapače, ukoliko razmislimo i prisjetimo se malo rudimentarne
@@ -194,7 +194,7 @@ niže.
 
 **Primjer Kornjača i Poligon**
 
-```
+``` python
  1 import turtle
  2
  3 # ZADAJ ULAZNE VRIJEDNOSTI
@@ -238,14 +238,12 @@ broj stranica, tako raste i veličina. Na slici
 data-reference="fig:turtle_big_poly">5</a> vidimo poligon koji je
 pobjegao s ekrana.
 
-**Slika 9: Interaktivan rad s kornjačom.**
-
 <p align="center">
   <strong>Slika 9:</strong> Interaktivan rad s kornjačom.
   <br><br>
   <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_big_poly.png" alt="Slika 9: Interaktivan rad s kornjačom.**" width="600">
 
-
+</p>
 
 
 Što ukoliko želimo da nam svi poligoni imaju istu veličinu bez ručnog
@@ -257,7 +255,7 @@ stranice možemo zatim izračunati. Pogledajmo kako.
 
 **Primjer 6.4: Kronjača i poligon 2.**
 
-```
+``` python
  1 import turtle
  2 import math # treba nam funkcija za sinus, odnosno math.sin
  3
@@ -288,6 +286,7 @@ stranice možemo zatim izračunati. Pogledajmo kako.
  28
  29 turtle.done()
 ```
+
 Dodali smo samo formulu za izračun dužine stranice iz radijusa. Na ovaj
 način kad crtamo poligone istog radijusa, oni ne rastu s brojem
 stranica. Dok ovaj kod prikazuje svrsishodnu upotrebu trigonometrije u
@@ -321,18 +320,18 @@ kliknemo na "start", dobiti ćemo sliku
 <a href="#fig:turtle_examples" data-reference-type="ref"
 data-reference="fig:turtle_examples">6</a>.
 
-**Slika 10: Napredni primjeri mogućnosti s kornjačom.**
-
 <p align="center">
   <strong>Slika 10:</strong> Napredni primjeri mogućnosti s kornjačom.
   <br><br>
   <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_examples.png" alt="Slika 10: Napredni primjeri mogućnosti s kornjačom.**" width="600">
 
+</p>
 
 Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
