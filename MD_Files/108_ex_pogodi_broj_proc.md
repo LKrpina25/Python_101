@@ -93,7 +93,48 @@ smo u ispisu prikazali i broj pokušaja.
 Ovo možemo riješiti i petljom ‘for‘. Sada naime, znamo da kod želimo
 ponoviti točno n puta (dozvoljen broj pokušaja) što pogoduje korištenju
 petlje while. Prikazano je i dobar primjer za korištenje mogućnosti ‘for
-... else‘.
+... else‘.ž
+
+```
+ 1 import random
+ 2
+ 3 # definiraj osnovne postavke za program
+ 4 n_min = 1
+ 5 n_max = 100
+ 6 n_max_tries = 7 # definiraj dozvoljen broj pokušaja
+ 7
+ 8 # postavi interne vrijednosti za rad ovog programa
+ 9 n = random.randint(n_min, n_max) # odaberi broj koji će se pogađati
+ 10
+ 11 print('Pogodi broj između', n_min, 'i', n_max)
+ 12
+ 13 # ponavljaj sljedeće radnje do maksimalnog broja pokušaja
+ 14 for n_tries in range(n_max_tries):
+ 15     # stvori poruku za korisnika koja uključuje i broj pokušaja
+ 16     # varijabli n_tries dodajemo 1 kako korisniku prvi pokušaj ne bismo prikazivali kao 0
+ 17     message = 'Pogodi broj (pokušaj ' + str(n_tries + 1) + '/' + str(n_max_tries) + '): '
+ 18     # pitaj korisnika za unos
+ 19     n_user = input(message)
+ 20     # pripremi unos
+ 21     n_user = int(n_user)
+ 22     # usporedi brojeve ...
+ 23     # ako je korisnik pogodio broj
+ 24     if n_user == n:
+ 25     print('BRAVO!')
+ 26     break # čim korisnik pogodi prekidamo petlju
+ 27     # ako je traženi broj veći
+ 28     elif n_user < n:
+ 29     print('Nije točno! Broj je veći.')
+ 30
+ 31     # ako je traženi broj manji
+ 32 else:
+ 33 print('Nije točno! Broj je manji.')
+ 34 else:
+ 35 # ovaj kôd će se izvršiti samo ako petlja 'for' nije prekinuta s naredbom break;
+ 36 # u ovom slučaju, to je samo ako korisnik nije uspio pogoditi broj u zadanom broju pokušaja
+ 37 print('Traženi broj', n, 'nije pronađen u dozvoljenom broju pokušaja!')
+ 39 input('Igra je gotova. Pritisni <enter> za kraj'
+```
 
 Rješenje petljom ‘for‘ ima par linija kôda manje i nekima može biti
 elegantnije. U ovom slučaju svejedno je koji pristup odaberemo pa je
@@ -123,6 +164,7 @@ Nisi uspio pogoditi traženi broj u dozvoljenom broju pokušaja!
 ```
 
 Ovaj program je sada više-manje gotov.
+
 
 
 
