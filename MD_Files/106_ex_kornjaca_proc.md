@@ -323,13 +323,17 @@ data-reference="fig:turtle_examples">6</a>.
 
 **Slika 10: Napredni primjeri mogućnosti s kornjačom.**
 
+<p align="center">
+  <strong>Slika 10:</strong> Napredni primjeri mogućnosti s kornjačom.
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_examples.png" alt="Slika 10: Napredni primjeri mogućnosti s kornjačom.**" width="600">
 
-![Slika 10: Napredni primjeri mogućnosti s kornjačom](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_examples.png)
 
 Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
