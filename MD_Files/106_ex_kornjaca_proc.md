@@ -159,9 +159,10 @@ napraviti turn_angle = 120  # stupanj pod kojim se skreće
 </div>
 
 <p align="center">
- <strong>Slika 5:</strong> Interaktivan rad s kornjačom.
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_triangle.png" alt="Slika 7: Rezultat programa Kornjača i trokut">
-  <br>
+ <strong>Slika 7:</strong> Rezultat programa Kornjače i trokuta.
+ <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_triangle.png" alt="Slika 7: Rezultat programa Kornjača i trokut" width="600">
+ 
  
 </p>
  
@@ -329,6 +330,7 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
