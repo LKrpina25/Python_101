@@ -597,14 +597,14 @@ redak u tablici.
 
 Pogledajmo primjer:
 
-```
+``` python
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 redak = ['Interesting times',  'Terry Pratchett',  1994, 'Gollancz', '0-575-05800-5']
 ```
 
 Tablica nam je onda jednostavno popis redaka:
 
-```
+``` python
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 tablica = [
     ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X'],
@@ -620,7 +620,7 @@ trenutak i da se zapitamo zašto zaglavlje držimo izdvojeno. Mogli smo ga
 uključiti kao što je uobičajeno u raznom softveru kao "prvi redak u
 tablici":
 
-```
+``` python
 tablica = [
     ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
     ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X'],
@@ -642,7 +642,7 @@ glavnom popisu ("tablici") je broj retka, a indeks u svakom pod-popisu
 ("retku") je broj stupca. Pročitajmo, na primjer, drugi redak i
 vrijednost svojstva "Godina" tog retka.
 
-```
+``` python
 drugi_redak = tablica[1]  # prvi redak je na indeksu 0!
 godina = drugi_redak[2]   # treći stupac
 
@@ -656,7 +656,7 @@ Ako se prisjetimo nekih dodatnih radnji s popisima, sjetit ćemo se i da
 je moguće dohvatiti indeks neke poznate vrijednosti u popisu. Pogledajmo
 kako iskoristiti ovaj trik u kontekstu prikazanih struktura.
 
-```
+``` python
 # dohvati indeks za godinu putem indeksa naziva u zaglavlju
 i_godina = header.index('Godina')
 # dohvati element na indeksu 1 i zatim dohvati element na istom indeksu na kojem 
@@ -684,7 +684,7 @@ retke rječnik te u kojem su ključevi ISBN vrijednosti, a reci, isto što
 i prije, odnosno popis vrijednosti kod kojeg je redoslijed zadan
 zaglavljem.
 
-```
+``` python
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 tablica = {
     '0-575-04800-X': ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X'],
@@ -703,7 +703,7 @@ primjeru
 <a href="#listing:rjecnik_popisa_dohvat" data-reference-type="ref"
 data-reference="listing:rjecnik_popisa_dohvat">[listing:rjecnik_popisa_dohvat]</a>.
 
-```
+``` python
 # dohvati redak pomoću ISBN-a
 redak_za_isbn = tablica['0-575-05800-5']  
 # dohvati treći "stupac"
@@ -722,7 +722,7 @@ možemo vidjeti u primjeru
 <a href="#listing:pp_u_rp1" data-reference-type="ref"
 data-reference="listing:pp_u_rp1">[listing:pp_u_rp1]</a>.
 
-```
+``` python
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 tablica = [
     ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X'],
@@ -748,7 +748,7 @@ dodjelom tekućeg broja. Ova strategija je prikazana u primjeru
 <a href="#listing:pp_u_rp2" data-reference-type="ref"
 data-reference="listing:pp_u_rp2">[listing:pp_u_rp2]</a> :
 
-```
+``` python
 # tablica je ista kao i u prošlom primjeru
 
 # napravi prazan rječnik u koji će se dodavati podaci
@@ -799,7 +799,7 @@ Postavimo redak kao rječnik u kojem su ključevi nazivi svojstava (i.e.
 "stupaca u tablici"), a vrijednosti u rječniku su upravo vrijednosti tih
 svojstava.
 
-```
+``` python
 redak = {
    'Naslov': 'Interesting times', 
    'Autor': 'Terry Pratchett',
@@ -818,7 +818,7 @@ ih postavili kao vrijednosti u rječnik gdje su ključevi ISBN
 identifikatori, tada bi godinu neke knjige mogli adresirati kao u
 sljedećem primjeru:
 
-```
+``` python
 tablica_rjecnik = {
     '0-575-05800-5': {
        'Naslov': 'Interesting times', 
@@ -846,7 +846,7 @@ relacijskih baza podataka) pa ako želimo raditi s podacima u ovom
 obliku, moramo ih prvo restrukturirati. Pogledajmo prvo kako pretvoriti
 individualan popis vrijednosti u rječnik vrijednosti.
 
-```
+``` python
 # ulazni podaci
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 redak = ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X']
@@ -867,7 +867,7 @@ radili. U ovom istom primjeru mogli smo istim tim konceptima i
 preimenovati i/ili ispustiti neke atribute. Evo varijante koja ujedno i
 preimenuje atribute:
 
-```
+``` python
 # ulazni podaci
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 redak = ['Good Omens',  'Terry Pratchett & Neil Gaiman',  1990, 'Gollancz', '0-575-04800-X']
@@ -900,7 +900,7 @@ data-reference="listing:pp_u_rp2">[listing:pp_u_rp2]</a> i
 <a href="#listing:popis_u_rjecnik" data-reference-type="ref"
 data-reference="listing:popis_u_rjecnik">[listing:popis_u_rjecnik]</a>.
 
-```
+``` python
 # ulazni podaci
 zaglavlje = ['Naslov', 'Autor', 'Godina', 'Izdavač', 'ISBN']
 tablica = [
@@ -962,7 +962,7 @@ autora (odnosno stringova).
 Pogledajmo kako postaviti naš bibliografski zapis za neku knjigu kako bi
 dopuštao koautorstvo.
 
-```
+``` python
 zapis = {
    'Naslov': 'Good Omens', 
    'Autor': ['Terry Pratchett', 'Neil Gaiman'],  # atribut Autor sad dopušta više vrijednosti!
@@ -992,7 +992,7 @@ vrijednost ima svoje dijelove, utvrdili smo da je vrijednost složena te,
 shodno tome, da je struktura podataka primjeren način za reprezentaciju
 ovakvih vrijednosti. Na primjer, osobno ime možemo prikazati kao:
 
-```
+``` python
 osoba = {
     'ime': 'Terry', 
     'prezime': 'Pratchett'
@@ -1001,7 +1001,7 @@ osoba = {
 
 Kako ovu ideju iskoristiti u našim podacima?
 
-```
+``` python
 zapis = {
     'Naslov': 'Good Omens', 
     'Autor': [
@@ -1050,3 +1050,4 @@ nekog problema.
     neke relacijske baze poput PostgreSQLa od nedavno dopuštaju pohranu
     strukturiranih vrijednosti unutar ćelije i adresiranje unutar
     ćelije, što ih čini hibridnim radije no relacijskim bazama.
+
