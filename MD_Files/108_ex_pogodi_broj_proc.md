@@ -90,6 +90,46 @@ Pokušajte sami implementirati ovu nadogradnju.
 Rješenje koje koristi petlju ‘while‘ bi moglo izgledati ovako. Korisniku
 smo u ispisu prikazali i broj pokušaja.
 
+```
+ 1  import random
+ 2
+ 3  # definiraj osnovne postavke za program
+ 4  n_min = 1
+ 5  n_max = 100
+ 6  n_max_tries = 7 # definiraj dozvoljen broj pokušaja
+ 7
+ 8  # postavi interne vrijednosti za rad ovog programa
+ 9  n = random.randint(n_min, n_max) # odaberi broj koji će se pogađati
+ 10 n_user = None # definiraj varijablu za korisnički unos i postavi ju na None
+ 11 n_tries = 0 # definiraj varijablu koja će pospremati broj pokušaja
+ 12
+ 13 print('Pogodi broj između', n_min, 'i', n_max)
+ 14
+ 15 # ponavljaj sljedeće radnje sve dok korisnički pokušaj nije jednak traženom broju
+ 16 while n_user != n:
+ 17 # uvećaj broj pokušaja za jedan
+ 18 n_tries += 1
+ 19 # provjeri da li je korisnik prebacio dozovoljen broj pokušaja
+ 20 if n_tries > n_max_tries:
+ 21 # i ako je, prekini petlju ranije s primjerenom porukom (koja otkriva i traženi broj)
+ 22 print('Traženi broj', n, 'nije pronađen u dozvoljenom broju pokušaja!')
+ 23 break
+ 24 # stvori poruku za korisnika koja uključuje i broj pokušaja
+ 25 message = 'Pogodi broj (pokušaj ' + str(n_tries) + '/' + str(n_max_tries) + '): '
+ 26 # pitaj korisnika za unos
+ 27 n_user = input(message)
+ 28 # pripremi unos
+ 29 n_user = int(n_user)
+ 30 # usporedi brojeve ...
+ 31 if n_user == n: # ako je korisnik pogodio broj
+ 32 print('BRAVO!')
+ 33 elif n_user < n: # ako je traženi broj veći
+ 34 print('Nije točno! Broj je veći.')
+ 35 else: # ako je traženi broj manji
+ 36 print('Nije točno! Broj je manji.')
+ 37 input('Igra je gotova. Pritisni <enter> za kraj'
+```
+
 Ovo možemo riješiti i petljom ‘for‘. Sada naime, znamo da kod želimo
 ponoviti točno n puta (dozvoljen broj pokušaja) što pogoduje korištenju
 petlje while. Prikazano je i dobar primjer za korištenje mogućnosti ‘for
@@ -164,6 +204,7 @@ Nisi uspio pogoditi traženi broj u dozvoljenom broju pokušaja!
 ```
 
 Ovaj program je sada više-manje gotov.
+
 
 
 
