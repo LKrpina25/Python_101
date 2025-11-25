@@ -177,13 +177,11 @@ napraviti turn_angle = 60  # stupanj pod kojim se skreće
 
 </div>
 
-**Slika 8: Rezultat programa Kornjača i heksagon.**
+<p align="center">
+  <strong>Slika 8:</strong> Rezultat programa kornjača i heksagon.
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_hex.png" alt="Slika 8: Rezultat programa kornjača i heksagon" width="600">
 
-
-
-
-
-![Slika 8: Rezultat programa Kornjača i heksagon](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_hex.png)
 
 
 
@@ -242,9 +240,11 @@ pobjegao s ekrana.
 
 **Slika 9: Interaktivan rad s kornjačom.**
 
+<p align="center">
+  <strong>Slika 9:</strong> Interaktivan rad s kornjačom.
+  <br><br>
+  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_big_poly.png" alt="Slika 9: Interaktivan rad s kornjačom.**" width="600">
 
-
-![Slika 9: Interaktican rad s kornjačom](https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_big_poly.png)
 
 
 
@@ -330,6 +330,7 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
