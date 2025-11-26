@@ -236,24 +236,15 @@ vidjeti na tablici
 <a href="#tab:operatori-usporedba" data-reference-type="ref"
 data-reference="tab:operatori-usporedba">2</a>.
 
-<div class="center">
+| **operator** | **operacija**     | **primjer**  | **rezultat** |
+|:------------|:-----------------|:------------|:------------|
+| `==`        | jednako           | `7 == 2`    | False       |
+| `!=`        | nejednako         | `7 != 2`    | True        |
+| `<`         | manje             | `7 < 2`     | False       |
+| `<=`        | manje ili jednako | `7 <= 2`    | False       |
+| `>`         | veće              | `7 > 2`     | True        |
+| `>=`        | veće ili jednako  | `7 >= 2`    | True        |
 
-<div id="tab:operatori-usporedba">
-
-| **operator**          | **operacija**     | **primjer**    | **rezultat** |
-|:----------------------|:------------------|:---------------|:-------------|
-| $`\boldsymbol{==}`$   | jednako           | $`7\:==\:2`$   | False        |
-| $`\boldsymbol{!\!=}`$ | nejednako         | $`7\:!\!=\:2`$ | True         |
-| $`\boldsymbol{<}`$    | manje             | $`7\:<\:2`$    | True         |
-| $`\boldsymbol{<\!=}`$ | manje ili jednako | $`7\:<\!=\:2`$ | True         |
-| $`\boldsymbol{>}`$    | veće              | $`7\:>\:2`$    | False        |
-| $`\boldsymbol{>\!=}`$ | veće ili jednako  | $`7\:>\!=\:2`$ | False        |
-
-Operatori za usporedbu
-
-</div>
-
-</div>
 
 ### Logički operatori
 
@@ -266,21 +257,12 @@ data-reference="tab:operatori-bool">3</a>. Ovi operatori zajedno s
 operatorima za usporedbu imaju posebno značajnu ulogu kod kondicionala,
 odnosno *if ... then ... else* konstrukcija.
 
-<div class="center">
+| **operator** | **operacija**     | **primjer**             | **rezultat** |
+|:------------|:-----------------|:-----------------------|:------------|
+| `and`       | logičko i         | `7 > 2` and `7 < 10`  | True        |
+| `or`        | logičko ili       | `7 < 2` or `7 < 10`   | True        |
+| `not`       | logička inverzija | not `7 > 2`            | False       |
 
-<div id="tab:operatori-bool">
-
-| **operator** | **operacija**     | **primjer**              | **rezultat** |
-|:-------------|:------------------|:-------------------------|:-------------|
-| **and**      | logičko i         | $`7 > 2`$ and $`7 < 10`$ | True         |
-| **or**       | logičko ili       | $`7 < 2`$ or $`7 < 10`$  | True         |
-| **not**      | logička inverzija | not $`7\:>\:2`$          | False        |
-
-Logički operatori
-
-</div>
-
-</div>
 
 ### Operatori za provjeru članstva
 
@@ -292,20 +274,13 @@ tekstom. Operatori za provjeru članstva su prikazani na tablici
 <a href="#tab:operatori-clanstvo" data-reference-type="ref"
 data-reference="tab:operatori-clanstvo">4</a>.
 
-<div class="center">
+| **operator** | **operacija** | **primjer**        | **rezultat** |
+| :----------- | :------------ | :----------------- | :----------- |
+| `in`         | sadrži        | `"a" in "abc"`     | True         |
+| `not in`     | ne sadrži     | `"a" not in "abc"` | False        |
 
-<div id="tab:operatori-clanstvo">
+*Operatori za provjeru članstva*
 
-| **operator** | **operacija** | **primjer**      | **rezultat** |
-|:-------------|:--------------|:-----------------|:-------------|
-| **in**       | sadrži        | "a" in "abc"     | True         |
-| **not in**   | ne sadrži     | "a" not in "abc" | False        |
-
-Operatori za provjeru članstva
-
-</div>
-
-</div>
 
 ### Operatori za provjeru identiteta
 
@@ -318,20 +293,10 @@ provjerava da li se dvije vrijednosti mogu smatrati ekvivalentnima
 odnosno “istima”, a provjera identiteta provjerava da li se radi o istoj
 vrijednosti u memoriji računala.
 
-<div class="center">
-
-<div id="tab:operatori-identitet">
-
 | **operator** | **operacija**       | **primjer**   | **rezultat** |
 |:-------------|:--------------------|:--------------|:-------------|
 | **is**       | je isti objekt      | True is 1     | False        |
 | **is not**   | ne nije isti objekt | True is not 1 | True         |
-
-Operatori za provjeru identiteta
-
-</div>
-
-</div>
 
 Ovo će početi imati više smisla kada dođemo do objektnog programiranja,
 ali za sada možemo upotrebu prikazati sljedećim primjerom:
