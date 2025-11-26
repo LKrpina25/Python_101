@@ -10,7 +10,7 @@ interaktivno.
 
 <p align="center">
  <strong>Slika 5:</strong> Interaktivan rad s kornjačom.
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_idle.png" alt="Slika 5: Interaktivan rad s kornjačom">
+  <img src="../Slike/turtle_idle.png">
   <br>
  
 </p>
@@ -75,7 +75,7 @@ Najjednostavnije rješenje ovog problema je kako slijedi:
 <p align="center">
   <strong>Slika 6:</strong> Rezultat programa kornjača i kvadrat.
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_square.png" alt="Slika 6: Rezultat programa kornjača i kvadrat" width="600">
+  <img src="../Slike/turtle_square.png" width="600">
 </p>
 
 
@@ -161,8 +161,7 @@ napraviti turn_angle = 120  # stupanj pod kojim se skreće
 <p align="center">
  <strong>Slika 7:</strong> Rezultat programa Kornjače i trokuta.
  <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_triangle.png" alt="Slika 7: Rezultat programa Kornjača i trokut" width="600">
- 
+  <img src="../Slike/turtle_triangle.png" width="600">
  
 </p>
  
@@ -180,7 +179,7 @@ napraviti turn_angle = 60  # stupanj pod kojim se skreće
 <p align="center">
   <strong>Slika 8:</strong> Rezultat programa kornjača i heksagon.
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_hex.png" alt="Slika 8: Rezultat programa kornjača i heksagon" width="600">
+  <img src="../Slike/turtle_hex.png" width="600">
 
 </p>
 
@@ -241,7 +240,7 @@ pobjegao s ekrana.
 <p align="center">
   <strong>Slika 9:</strong> Interaktivan rad s kornjačom.
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_big_poly.png" alt="Slika 9: Interaktivan rad s kornjačom.**" width="600">
+  <img src="../Slike/turtle_big_poly.png" width="600">
 
 </p>
 
@@ -323,7 +322,7 @@ data-reference="fig:turtle_examples">6</a>.
 <p align="center">
   <strong>Slika 10:</strong> Napredni primjeri mogućnosti s kornjačom.
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/turtle_examples.png" alt="Slika 10: Napredni primjeri mogućnosti s kornjačom.**" width="600">
+  <img src="../Slike/turtle_examples.png" width="600">
 
 </p>
 
@@ -331,6 +330,7 @@ Ipak, ovi primjeri su uglavnom napredni i koriste mnoge koncepte koje
 još nismo objasnili pa u njih nećemo sada dublje ulaziti. Ovdje su
 spomenuti jer prikazuju mogućnost programiranja radi kreativnog procesa
 radije no pragmatične vrijednosti programa.
+
 
 
 
