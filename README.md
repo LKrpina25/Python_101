@@ -1,9 +1,9 @@
-# python_101
-_Konverzija .tex > .md > .html > i uređivanje koda_
+# Sadržaj
+_- Konverzija .tex > .md > .html > i uređivanje koda_
                                                                                              
-## Sadržaj
+## Uvod
 
-### [Uvod](MD_Files/101_uvod.md)
+### [Uvod u programiranje](MD_Files/101_uvod.md)
 
 ## Osnovni pojmovi
 ### [Radnje: Izjave, izrazi, operatori, funkcije i metode](MD_Files/102_clean.md)
