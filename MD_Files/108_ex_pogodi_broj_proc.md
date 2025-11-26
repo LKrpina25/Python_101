@@ -90,7 +90,7 @@ Pokušajte sami implementirati ovu nadogradnju.
 Rješenje koje koristi petlju ‘while‘ bi moglo izgledati ovako. Korisniku
 smo u ispisu prikazali i broj pokušaja.
 
-```
+``` python
  1  import random
  2
  3  # definiraj osnovne postavke za program
@@ -108,12 +108,12 @@ smo u ispisu prikazali i broj pokušaja.
  15 # ponavljaj sljedeće radnje sve dok korisnički pokušaj nije jednak traženom broju
  16 while n_user != n:
  17 # uvećaj broj pokušaja za jedan
- 18 n_tries += 1
- 19 # provjeri da li je korisnik prebacio dozovoljen broj pokušaja
- 20 if n_tries > n_max_tries:
- 21 # i ako je, prekini petlju ranije s primjerenom porukom (koja otkriva i traženi broj)
- 22 print('Traženi broj', n, 'nije pronađen u dozvoljenom broju pokušaja!')
- 23 break
+ 18   n_tries += 1
+ 19   # provjeri da li je korisnik prebacio dozovoljen broj pokušaja
+ 20   if n_tries > n_max_tries:
+ 21   # i ako je, prekini petlju ranije s primjerenom porukom (koja otkriva i traženi broj)
+ 22     print('Traženi broj', n, 'nije pronađen u dozvoljenom broju pokušaja!')
+ 23     break
  24 # stvori poruku za korisnika koja uključuje i broj pokušaja
  25 message = 'Pogodi broj (pokušaj ' + str(n_tries) + '/' + str(n_max_tries) + '): '
  26 # pitaj korisnika za unos
@@ -122,11 +122,11 @@ smo u ispisu prikazali i broj pokušaja.
  29 n_user = int(n_user)
  30 # usporedi brojeve ...
  31 if n_user == n: # ako je korisnik pogodio broj
- 32 print('BRAVO!')
+ 32   print('BRAVO!')
  33 elif n_user < n: # ako je traženi broj veći
- 34 print('Nije točno! Broj je veći.')
+ 34   print('Nije točno! Broj je veći.')
  35 else: # ako je traženi broj manji
- 36 print('Nije točno! Broj je manji.')
+ 36   print('Nije točno! Broj je manji.')
  37 input('Igra je gotova. Pritisni <enter> za kraj'
 ```
 
@@ -135,7 +135,7 @@ ponoviti točno n puta (dozvoljen broj pokušaja) što pogoduje korištenju
 petlje while. Prikazano je i dobar primjer za korištenje mogućnosti ‘for
 ... else‘.ž
 
-```
+``` python
  1 import random
  2
  3 # definiraj osnovne postavke za program
@@ -204,6 +204,7 @@ Nisi uspio pogoditi traženi broj u dozvoljenom broju pokušaja!
 ```
 
 Ovaj program je sada više-manje gotov.
+
 
 
 
