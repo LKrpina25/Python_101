@@ -222,8 +222,8 @@ aplikacija s grafičkim sučeljem, odnosno moguće ju je pokrenuti kroz
 </p>
 
 Kada pokrenemo IDLE, dočekati će nas glavno sučelje ovog programa koje
-je prikazano na slici [2](#fig:idle){reference-type="ref"
-reference="fig:idle"}. U glavnom prozoru IDLE-a naredbe se upisuju nakon
+je prikazano na slici [2](#fig-idle)
+. U glavnom prozoru IDLE-a naredbe se upisuju nakon
 redaka koje počinju s \"$>>>$\", a izvršavaju pritiskom na tipku *enter*
 odnosno *return*. U ovom slučaju smo izvršili jednostavan *izraz*
 `1 + 1`{.python}. Kada se taj izraz evaluira pritiskom na tipku *enter*,
@@ -239,8 +239,8 @@ Osim same komandne linije, IDLE funkcionira i kao program za izradu
 tekstualnih datoteka odnosno omogućuje i standardan pristup
 programiranju. Ako iz padajućeg izbornika odaberemo mogućnost
 \"File-\>New File\", otvoriti će nam se nova tekstualna datoteka kao što
-je vidljivo na slici [3](#fig:idle_text){reference-type="ref"
-reference="fig:idle_text"}. Datoteka sadrži tipičan program za prvi
+je vidljivo na slici [3](#fig-idle_text)
+. Datoteka sadrži tipičan program za prvi
 susret s programiranjem koji ćemo kasnije podrobnije analizirati.
 
 
@@ -266,8 +266,8 @@ izbornika \"Run-\>Run Module\" ili pritiskom na tipku \"F5\". Jedini
 zahtjev je da prvo sačuvamo datoteku na disk pri čemu je dobro paziti da
 joj dodijelimo ekstenziju .py. IDLE kao softver je, naime, dosta
 asketske prirode pa neke verzije ne paze na to umjesto nas. Rezultat ove
-radnje je vidljiv na slici [4](#fig:idle_text_run){reference-type="ref"
-reference="fig:idle_text_run"}.
+radnje je vidljiv na slici [4](#fig-idle_text_run)
+
 
 <p align="center">
   <strong>Slika 4:</strong> IDLE i rezultat izvršavanja programa
