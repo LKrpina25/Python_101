@@ -192,15 +192,16 @@ idućem poglavlju. Pregled je vidljiv u tablici
 <a href="#tab:operatori-aritmetika" data-reference-type="ref"
 data-reference="tab:operatori-aritmetika">1</a>.
 
-| **operator** | **operacija** | **primjer** | **rezultat** |
-|:---|:---|:---|:---|
-| $`\boldsymbol{+}`$ | zbrajanje | $`7\:+\:2`$ | 9 |
-| $`\boldsymbol{-}`$ | oduzimanje | $`7\:-\:2`$ | 5 |
-| $`\boldsymbol{*}`$ | množenje | $`7\:*\:2`$ | 14 |
-| $`\boldsymbol{**}`$ | potenciranje | $`7\:**\:2`$ | 49 |
-| $`\boldsymbol{/}`$ | dijeljenje | $`7\:/\:2`$ | 3.5 |
-| $`\boldsymbol{//}`$ | cjelobrojno dijeljenje | $`7\://\:2`$ | 2 |
-| $`\boldsymbol{\%}`$ | ostatak cjelobrojnog dijeljenja | $`7\:\%\:2`$ | 1 |
+| **operator** | **operacija**                  | **primjer** | **rezultat** |
+|:------------|:--------------------------------|:------------|:------------|
+| `+`         | zbrajanje                      | `7 + 2`     | 9           |
+| `-`         | oduzimanje                     | `7 - 2`     | 5           |
+| `*`         | množenje                        | `7 * 2`     | 14          |
+| `**`        | potenciranje                    | `7 ** 2`    | 49          |
+| `/`         | dijeljenje                      | `7 / 2`     | 3.5         |
+| `//`        | cjelobrojno dijeljenje          | `7 // 2`    | 2           |
+| `%`         | ostatak cjelobrojnog dijeljenja | `7 % 2`     | 1           |
+
 
 Aritmetički operatori
 
