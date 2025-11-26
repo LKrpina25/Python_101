@@ -163,8 +163,10 @@ vidimo kako izgleda pokretanje instalacije novijih verzija Pythona.
 <p align="center">
   <strong>Slika 1:</strong> Instalacija Pythona na Windows OS-u
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/windows_install.png" alt="Slika 1: Instalacija Pythona na Windows OS-u" width="600">
+  <img src="https://raw.githubusercontent.com/LKrpina25/Python_101/main/Slike/windows_install.png" 
+       alt="Slika 1: Instalacija Pythona na Windows OS-u" width="600">
 </p>
+
 
 
 Dok klik na \"Install Now\" obavlja većinu posla, ipak je korisno
