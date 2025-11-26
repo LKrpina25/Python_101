@@ -491,13 +491,12 @@ prijevodu, greška u vrsti podataka: objekt vrste cijeli broj se ne može
 pozvati, odnosno nije izvršiv. Navedena greška demonstrira upotrebu
 ranije opisane terminologije.
 
-:::important
-**Izvršavanje funkcija**  
+> **Važno: Izvršavanje funkcija**  
+>
+> Funkcije se pozivaju oblim zagradama. Oble zagrade nakon riječi naznačuju da se neki kôd poziva. Na primjer,  
+> `print` se jednostavno referira na tu funkciju i ne izvršava je.  
+> `print()` izvršava tu funkciju.
 
-Funkcije se pozivaju oblim zagradama. Oble zagrade nakon riječi naznačuju da se neki kôd poziva. Na primjer,  
-`print` se jednostavno referira na tu funkciju i ne izvršava je.  
-`print()` izvršava tu funkciju.
-:::
 
 
 ### Pozivanje i parametri
@@ -669,10 +668,9 @@ objekti vrste `int` nemaju \"mogućnost\" odnosno metodu
 `upper`: to kod brojeva jednostavno nema smisla jer se veže uz
 koncept promjene veličine slova.
 
-::: important
-Metode Metode su funkcije koje su vezane uz određenu vrstu vrijednosti i
-implicitno primaju tu vrijednost kao prvi parametar.
-:::
+> **Važno:** Metode su funkcije koje su vezane uz određenu vrstu vrijednosti i
+> implicitno primaju tu vrijednost kao prvi parametar.
+
 
 [^1]: Termin \"logički pišu\" se koristi zato jer je jedan redak moguće
     podijeliti u više koristeći se posebnom sintaksom, kao i više redaka
