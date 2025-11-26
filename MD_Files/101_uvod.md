@@ -156,7 +156,7 @@ referentne implementacije Pythona s [python.org](http://www.python.org).
 Python instaliran na ovaj način dolazi sa svim standardnim dijelovima
 jezika i jednostavno ga je instalirati putem uobičajenog grafičkog
 sučelja za instalaciju *desktop* aplikacija. Na slici
-[1](#fig:wininstall){reference-type="ref" reference="fig:wininstall"}
+[1](#fig:wininstall)
 vidimo kako izgleda pokretanje instalacije novijih verzija Pythona.
 
 
@@ -226,10 +226,10 @@ aplikacija s grafičkim sučeljem, odnosno moguće ju je pokrenuti kroz
 Kada pokrenemo IDLE, dočekati će nas glavno sučelje ovog programa koje
 je prikazano na slici [2](#fig-idle)
 . U glavnom prozoru IDLE-a naredbe se upisuju nakon
-redaka koje počinju s \"$>>>$\", a izvršavaju pritiskom na tipku *enter*
+redaka koje počinju s \">>>\", a izvršavaju pritiskom na tipku *enter*
 odnosno *return*. U ovom slučaju smo izvršili jednostavan *izraz*
-`1 + 1`{.python}. Kada se taj izraz evaluira pritiskom na tipku *enter*,
-rezultat se ispisuje u idućem retku koja ne započinje s \"$>>>$\" kako
+`1 + 1`. Kada se taj izraz evaluira pritiskom na tipku *enter*,
+rezultat se ispisuje u idućem retku koja ne započinje s \">>>\" kako
 bi bilo jasno da se radi o rezultatu, a ne o naredbi. Obzirom da još
 nismo spomenuli niti jednu posebnu naredbu za programske jezike,
 probajte izvesti nekoliko osnovnih matematičkih radnji. IDLE je sam po
@@ -296,7 +296,7 @@ nalazio u nekoj .py datoteci. Ove datoteke je najbolje za početak pisati
 u softveru koji nam je jednostavno koristiti pa kasnije potencijalno
 preći na profesionalniji softver za programiranje. Za upoznavanje s
 ovakvim softverom i odabir aplikacije za pisanje kôda vidi poglavlje
-[1.6](#softver){reference-type="ref" reference="softver"}, a za sada se
+[1.6](#softver), a za sada se
 zadržimo na primjerima u ovom tekstu.
 
 Primjeri U ovoj tekstu primjeri su neobično važni jer se upravo unutar
@@ -306,7 +306,7 @@ da su raniji koncepti već usvojeni.
 
 Osim spomenute vrste primjera, postoji još jedna:
 
-Primjeri u kojima neki reci počinju s \"$>>>$\" su česti u Python
+Primjeri u kojima neki reci počinju s \">>>\" su česti u Python
 literaturi i označavaju da se radi o interaktivnom izvršavanju kôda
 kojeg je korisnik unio u komandnu liniju kao što smo prikazali ranije.
 Na ovaj način se često prikazuju osnovni koncepti, a pojava ovakvog
@@ -316,10 +316,10 @@ i mehanizme.
 
 Riječ je o mogućnosti Pythona da se kôd upisuje i izvršava redak po
 redak što je izvrsno za učenje jezika jer omogućava direktnu
-eksperimentaciju. Reci koji počinju s \"$>>>$\" su oni koje mi upisujemo
+eksperimentaciju. Reci koji počinju s \">>>\" su oni koje mi upisujemo
 u Python komandnu liniju, a reci bez tih znakova se mogu pojaviti samo
-nakon redaka s početnim \"$>>>$\" i prikazuju rezultat izvršavanja
-prijašnjeg retka, ako postoji. Naravno, znakovi \"$>>>$\" nisu dio kôda
+nakon redaka s početnim \">>>\" i prikazuju rezultat izvršavanja
+prijašnjeg retka, ako postoji. Naravno, znakovi \">>>\" nisu dio kôda
 već jednostavno naznaka gdje se nalazi početak linije koja se izvršila.
 Drugim riječima, njih ne prepisujemo kada želimo isprobati kôd!
 
@@ -393,47 +393,46 @@ kôda koji *prenose informacije*, odnosno koji jednostavno
 
 Pogledajmo kako to funkcionira u programu koji smo upravo napisali. U
 našem programu, prva naredba se sastoji od poziva na *funkciju*
-`print`{.python} s vrijednošću `'Pozdrav, svijete!'`{.python} kao
+`print` s vrijednošću `'Pozdrav, svijete!'` kao
 *parametrom* što zajedno tvori jedan *izraz*:
-`ispiši 'Pozdrav, svijete!' na ekran`{.python}. Ovaj izraz se sastoji od
+`ispiši 'Pozdrav, svijete!' na ekran`. Ovaj izraz se sastoji od
 poziva na jednu radnju i svih podataka potrebnih za izvršavanje te
 radnje. Ti podaci su u ovom slučaju jednostavno tekst koji treba
 ispisati, a radnja se provodi pozivom na funkciju. Druga naredba se, na
-isti način, sastoji od poziva na funkciju `input`{.python} s vrijednošću
-`'Pritisni <enter> za kraj'`{.python}. Funkciju ovdje možemo shvatiti
+isti način, sastoji od poziva na funkciju `input` s vrijednošću
+`'Pritisni <enter> za kraj'`. Funkciju ovdje možemo shvatiti
 kao \"naredbu računalu\" radije no u striktno matematičkom smislu, a
 *poziv na funkciju* je naredba da se funkcija izvrši. Funkcija je jedan
 od temeljnih načina na koji u suvremenim programskim jezicima zadajemo
 radnje koje računalo treba izvršiti. Možemo reći da osnovne radnje
 \"pakiramo\" u funkcije što nam omogućuje da izvršavamo kompleksnije
-radnje kroz jednu naredbu. `print`{.python} je najosnovnija funkcija za
+radnje kroz jednu naredbu. `print` je najosnovnija funkcija za
 izvještavanje korisnika o rezultatima programa ili o važnim
-informacijama za vrijeme izvršavanja programa, a `input`{.python} je
+informacijama za vrijeme izvršavanja programa, a `input` je
 najosnovnija funkcija koja korisniku omogućuje unos vrijednosti u
-program. Drugim riječima, `input`{.python} i `print`{.python} su osnovne
+program. Drugim riječima, `input` i `print` su osnovne
 *input/output* naredbe u Pythonu. Obje funkcioniraju kroz komandnu
 liniju jer bilo kakvo grafičko sučelje unosi dodatne komplikacije u
 program i zahtjeve za operativni sustav. Programiranje grafičkog sučelja
 za ovaj program bi, na primjer, bilo znatno kompleksnije za izvesti od
 onoga što program već radi.
 
-U našem programu, funkciju `input`{.python} koristimo samo za zadršku
+U našem programu, funkciju `input` koristimo samo za zadršku
 programa od zatvaranja prije no što smo stigli pročitati informacije
 koje nam je program ispisao. Ovo je zapravo trik koji koristimo kako nam
 operativni sustav ne bi zatvorio prozor prije no što pročitamo rezultate
-programa. U idućoj vježbi je prikazano kako se `input`{.python}
+programa. U idućoj vježbi je prikazano kako se `input`
 uobičajeno koristi.
 
 Otvorite \"pozdrav_svijetu.py\" i promijenite sadržaj u kôd prikazan u
-primjeru [\[listing:pozdrav3\]](#listing:pozdrav3){reference-type="ref"
-reference="listing:pozdrav3"}, a zatim pokrenite program i pratite upute
+primjeru [\[listing:pozdrav3\]](#listing:pozdrav3), a zatim pokrenite program i pratite upute
 na ekranu.
 
 U ovom zadatku, pojavljuju se novi koncepti, *komentar* i *varijabla*.
 
-Komentari se naznačuju znakom `#`{.python} i sav tekst nakon tog znaka
+Komentari se naznačuju znakom `#` i sav tekst nakon tog znaka
 se smatra slobodnim tekstom koji se ne izvršava, a ne programskim kôdom.
-Znak `#`{.python} se može pojaviti bilo na početku ili unutar retka.
+Znak `#` se može pojaviti bilo na početku ili unutar retka.
 Komentari služe pružanju dodatnih informacija o kôdu i vrlo su korisni
 za poboljšanje čitljivosti i planiranje programa. U kompleksnom kôdu, na
 primjer, korisno je napisati riječima što se u nekom dijelu odvija kako
@@ -457,7 +456,7 @@ jedan redak kôda se pišu u istom retku nakon samog kôda. Duži komentari
 se najčešće pišu u redak iznad samog kôda te se nakon njih ne ostavlja
 prazan redak. Ukoliko je komentar predugačak za redak kôda[^5], tada se
 komentar može podijeliti u više redaka, a svaku je potrebno započeti
-znakom `#`{.python}.
+znakom `#`.
 
 Komentarlisting:komentar print(\"jao meni\") \# komentar za ovaj redak
 
@@ -476,34 +475,33 @@ nužno potrebne kako bi se mogli referirati na razne podatke koji su
 rezultati radnji u programu, koje si unijeli korisnici ili koji su pak
 dohvaćeni iz vanjskih datoteka, baza podataka ili raznih *online*
 usluga. U primjeru
-[\[listing:pozdrav3\]](#listing:pozdrav3){reference-type="ref"
-reference="listing:pozdrav3"}, `text`{.python} je varijabla. To možemo
+[\[listing:pozdrav3\]](#listing:pozdrav3), `text` je varijabla. To možemo
 prepoznati ponajprije zato zato jer joj se u retku
-`text = input("Unesi tekst i pritisni <enter>: ")`{.python} *pridružuje*
-vrijednost. Naime, znak `=`{.python} je *operator* za pridruživanje
-vrijednosti varijabli. Uz funkcije, operatori (npr. `+`{.python} i
-`-`{.python}) su drugi osnovan način zadavanja specifičnih radnji s
+`text = input("Unesi tekst i pritisni <enter>: ")` *pridružuje*
+vrijednost. Naime, znak `=` je *operator* za pridruživanje
+vrijednosti varijabli. Uz funkcije, operatori (npr. `+` i
+`-`) su drugi osnovan način zadavanja specifičnih radnji s
 podacima. Pridruživanje vrijednost varijablama te izvršavanje radnji
 putem funkcija i operatora je podrobnije opisano u idućem poglavlju, kao
 i njihova povezanost sa širim konceptima *izjava* i *izraza*. Ono što
 vrijedi spomenuti odmah su pravila imenovanja varijabli, funkcija i
 ostalih elemenata koji imaju specifična imena.
 
-Tekst `'Unesi tekst i pritisni <enter>: '`{.python} ili broj
-`1`{.python} su vrijednosti, ne stoje za nešto drugo već jesu upravo taj
-niz znakova odnosno taj broj. Varijabla `text`{.python} je drugačija,
-ona ne stoji za niz od četiri slova `'text'`{.python} već je naziv za
-što god je korisnik unio u program putem funkcije `input`{.python}.
+Tekst `'Unesi tekst i pritisni <enter>: '` ili broj
+`1` su vrijednosti, ne stoje za nešto drugo već jesu upravo taj
+niz znakova odnosno taj broj. Varijabla `text` je drugačija,
+ona ne stoji za niz od četiri slova `'text'` već je naziv za
+što god je korisnik unio u program putem funkcije `input`.
 
 Nazivi i pravila imenovanja Nazivi (npr. varijabli i funkcija) u Pythonu
 i većini drugih programskih jezika se smiju sastojati samo od slova,
 brojki i donje crte (\_) i ne smiju počinjati s brojem. Ne smiju, dakle,
 sadržavati razmake i interpunkcijske znakove. Također, ne smiju biti
-rezervirane riječi kao što su to riječi `if`{.python}, `and`{.python},
-`while`{.python} i slične.
+rezervirane riječi kao što su to riječi `if`, `and`,
+`while` i slične.
 
 Što se funkcija tiče, kao prvi susret možemo proučiti kako radi funkcija
-`input`{.python}. Ta funkcija:
+`input`. Ta funkcija:
 
 1.  prima tekst za prikaz korisniku (koji mu tipično daje upute) kao
     ulazni podatak
@@ -514,19 +512,19 @@ rezervirane riječi kao što su to riječi `if`{.python}, `and`{.python},
 3.  kao rezultat funkcije vraća tekst koji je korisnik napisao prije no
     što je stisnuo *enter*
 
-Vrijednost varijable `text`{.python} je dakle varijabilna i točnu
+Vrijednost varijable `text` je dakle varijabilna i točnu
 vrijednost uopće ne moramo znati prilikom pisanja programa: ona je što
-god da je korisnik unio putem funkcije `input`{.python} *za vrijeme
+god da je korisnik unio putem funkcije `input` *za vrijeme
 izvršavanja* programa. U naredbi
-`text = input('Unesi tekst i pritisni <enter>')`{.python}, prvo se
-izvršava izraz koji se sastoji od poziva funkcije `input`{.python} s
+`text = input('Unesi tekst i pritisni <enter>')`, prvo se
+izvršava izraz koji se sastoji od poziva funkcije `input` s
 jednom vrijednosti kao parametrom. Taj izraz vraća vrijednost koju je
-korisnik unio i ta vrijednost se pridružuje varijabli `text`{.python}. U
+korisnik unio i ta vrijednost se pridružuje varijabli `text`. U
 ostatku programa, kada se želimo referirati na koju god vrijednost da je
-korisnik unio možemo to činiti putem varijable `text`{.python} kao u
-naredbi `print(text)`{.python}. Dapače, moramo tako jer ne možemo
+korisnik unio možemo to činiti putem varijable `text` kao u
+naredbi `print(text)`. Dapače, moramo tako jer ne možemo
 unaprijed znati koju će vrijednost korisnik unijeti! Općenitije, opis
-funkcije `input`{.python} prikazuje kako radi tipična funkcija: primi
+funkcije `input` prikazuje kako radi tipična funkcija: primi
 parametre, na osnovu njih provede neke radnje pa vrati rezultat. Taj
 rezultat često pridružujemo nekoj varijabli kako bi se na njega mogli
 kasnije referirati.
@@ -546,7 +544,7 @@ Kada pokrenemo ovaj program, sustav će javiti sljedeću grešku:
 
 Problem je što smo u retku 2 zaboravili zatvoriti zagradu. Obzirom da se
 naredbe mogu pisati u više redaka, Python je pogrešku uočio tek u retku
-3 pa nam to i javlja. Kada vidimo pogrešku vrste `SyntaxError`{.python}
+3 pa nam to i javlja. Kada vidimo pogrešku vrste `SyntaxError`
 to znači da nešto ne valja u retku koji nam javlja sustav ili u retku
 prije toga. U ovom slučaju, greška je u retku 2. Kod pogreška je važno
 zapamtiti sljedeće:
@@ -564,10 +562,10 @@ baviti podrobnije.
 Obzirom da je sada sintaksa ispravna, program će se početi izvršavati,
 ali će se u retku 3 dogoditi sljedeća pogreška:
 
-Kada nam se pojavi pogreška vrste `NameError`{.python} to znači da smo
+Kada nam se pojavi pogreška vrste `NameError` to znači da smo
 se negdje referirali na naziv (npr. varijable ili funkcije) koji ne
-postoji. U ovom slučaju smo varijablu u retku 2 nazvali `text`{.python},
-a u retku 3 se referiramo na naziv `tekst`{.python} koji u ovom programu
+postoji. U ovom slučaju smo varijablu u retku 2 nazvali `text`,
+a u retku 3 se referiramo na naziv `tekst` koji u ovom programu
 nije definiran. Ovo će nam također biti česta pogreška i vrlo često se
 javlja uslijed tipfelera. Na primjer kada napišemo \"prnit\" umjesto
 \"print\".
@@ -575,8 +573,7 @@ javlja uslijed tipfelera. Na primjer kada napišemo \"prnit\" umjesto
 Sada kada se više ne bojimo pogrešaka, možemo iskoristiti prikazane
 koncepte, dodati jedan novi za kontrolu toka programa i možemo
 isprogramirati mali računalni upitnik. Ovaj program je vidljiv u
-primjeru [\[listing:kviz\]](#listing:kviz){reference-type="ref"
-reference="listing:kviz"}.
+primjeru [\[listing:kviz\]](#listing:kviz).
 
 Unesimo taj primjer u tekstualnu datoteku i pokrenimo. Kao što vidimo,
 igraču je omogućen odabir odgovora kroz vrijednost koju unosi u komandnu
@@ -593,15 +590,15 @@ igrač unio malo slovo \"b\", tada ispiši tekst vezan za odabir \"b\".
 Ako je pak igrač unio malo slovo \"c\", tada ispiši tekst vezan za
 odabir \"c\". A ako je igrač unio bilo što drugo, tada ispiši tekst
 vezan za nepoznati odabir.\" Većina riječi u prikazanom kôdu nam je sama
-po sebi razumljiva, a riječ `elif`{.python} u Python kôdu je jednostavno
+po sebi razumljiva, a riječ `elif` u Python kôdu je jednostavno
 skraćeni oblik engleskog izraza *else if* odnosno "osim ako".
 
 Naš kondicional se ovdje sastoji od četiri *uvjeta*. Kôd pisan uvučeno
-ispod uvjeta (nakon redaka koji počinju s `if`{.python}, `elif`{.python}
-ili `else`{.python}), izvršava se samo ako je uvjet zadovoljen. U
+ispod uvjeta (nakon redaka koji počinju s `if`, `elif`
+ili `else`), izvršava se samo ako je uvjet zadovoljen. U
 Pythonu se uvlačenjem kôda naznačava koji reci kôda se izvršavaju u
 odnosu na koji uvjet. Ako je, na primjer,
-`if player_choice == "c":`{.python} uvjet zadovoljen, tada se izvršavaju
+`if player_choice == "c":` uvjet zadovoljen, tada se izvršavaju
 reci 16 i 17. Sve retke koji se izvršavaju na ovaj način zajedno
 nazivamo *blok* kôda. Dvotočka nam naznačava da se nakon retka koji
 njome završava očekuje novi blok kôda odnosno da ćemo uvući retke koje
@@ -616,15 +613,15 @@ vitičastim zagradama (\"{\" i \"}\"). Ipak, bilo koji programer koji
 drži do sebe će i u drugim programskim jezicima kôd uvući kako je
 prikazano jer ga je tako puno ugodnije za čitati.
 
-Primijetimo i dvostruki znak jednakosti, odnosno `==`{.python}. Ovo je
-jednostavno operator za provjeru jednakosti. `a == b`{.python} čitano
+Primijetimo i dvostruki znak jednakosti, odnosno `==`. Ovo je
+jednostavno operator za provjeru jednakosti. `a == b` čitano
 normalnim jezikom je: \"Da li je a jednako b?\" i rezultat može biti
-`True`{.python} ili `False`{.python}. Sjetimo se, znak `=`{.python} u
+`True` ili `False`. Sjetimo se, znak `=` u
 Pythonu (i mnogim drugim jezicima), služi pridruživanju vrijednosti
-varijablama, a ne provjeri jednakosti! Drugim riječima `a = 1`{.python}
-bi čitali \"varijabli `a`{.python} pridruži vrijednost `1`{.python}\", a
-ne \"je li vrijednost pridružena varijabli `a`{.python} jednaka broju
-`1`{.python}\".
+varijablama, a ne provjeri jednakosti! Drugim riječima `a = 1`
+bi čitali \"varijabli `a` pridruži vrijednost `1`\", a
+ne \"je li vrijednost pridružena varijabli `a` jednaka broju
+`1`\".
 
 U svakom slučaju, naš prvi program je sada dovoljno dorađen da smo
 dobili neki dojam o programiranju i sada možemo dublje ući u teme koje
@@ -640,7 +637,7 @@ redoslijedu:
 1.  **Radnje:** izjave, izrazi, operatori, funkcije i metode
 
 2.  **Podaci:** osnovne vrste vrijednosti (brojevi, booleove vrijednosti
-    i vrijednost `None`{.python})
+    i vrijednost `None`)
 
 3.  **Proširenja mogućnosti:** rad s modulima
 
@@ -853,17 +850,15 @@ izračunati neku vrijednost. Programerski žargon ovdje kopira matematički
 pa se kaže da se izrazi *evaluiraju* čime se izračunava vrijednost.
 Izrazi se u načelu sastoje od operatora i operanada, ali sadrže i druge
 koncepte kao što je to funkcija. O detaljima ovoga je riječ u sljedećem
-poglavlju ([\[radnje\]](#radnje){reference-type="ref"
-reference="radnje"}) koje se upravo podrobnije bavi radnjama.
+poglavlju ([\[radnje\]](#radnje)) koje se upravo podrobnije bavi radnjama.
 
 Obzirom na razinu pisanja, možemo spomenuti *retke* i *blokove* kôda.
 Redak teksta je prirodan način podjele kôda nekog programa, pa reci
 često odgovaraju individualnim izjavama. Blok kôda je skupina redaka
 koji se izvršavaju kao jedna cjelina. Koncept \"bloka\" je važniji no
 što se možda na prvi pogled čini. U primjeru
-[\[listing:kviz\]](#listing:kviz){reference-type="ref"
-reference="listing:kviz"} smo već vidjeli kondicional gdje svaki
-`if`{.python}, `elif`{.python} ili `else`{.python} dio očekuje blok kôda
+[\[listing:kviz\]](#listing:kviz) smo već vidjeli kondicional gdje svaki
+`if`, `elif` ili `else` dio očekuje blok kôda
 u nastavku koji se smije sastojati od minimalno jednog retka, ali često
 ih ima i više.
 
@@ -1009,10 +1004,10 @@ ignorirati.
 Kako bi čitali štivo napisano za Python 2 i adaptirali ga za Python 3,
 postoji nekoliko razlika koje trebamo držati na umu:
 
-1.  Naredba `print`{.python} je promijenila ponašanje: Python 2 izjava
-    `print`{.python}  \
-    `'Hello, world!'`{.python} je u Pythonu 3 postala funkcija i piše se
-    `print('Hello, world!')`{.python}. Glavna razlika u sintaksi su
+1.  Naredba `print` je promijenila ponašanje: Python 2 izjava
+    `print`  \
+    `'Hello, world!'` je u Pythonu 3 postala funkcija i piše se
+    `print('Hello, world!')`. Glavna razlika u sintaksi su
     zagrade, što znači da je u velikom broju print naredbi pisanih za
     Python 2 samo potrebno dodati zagrade kod riječi \"print\" (kako je
     upravo prikazano) i dobit ćemo validan Python 3.
@@ -1024,18 +1019,18 @@ postoji nekoliko razlika koje trebamo držati na umu:
 
 3.  U Pythonu 2, **dijeljenje cijelih brojeva** se ponaša prema logici
     računala i programskih jezika, pa, na primjer, rezultat operacije
-    `5 / 2`{.python} je 2! Po logici računala, dijeljenje dva broja će
+    `5 / 2` je 2! Po logici računala, dijeljenje dva broja će
     vratiti broj iste vrste kao i dva ulazna broja, što nije intuitivno.
     U Pythonu 3, ovaj izraz se ponaša po \"standardnoj\" matematičkoj
-    logici, odnosno rezultat operacije `5 / 2`{.python} je 2.5 kako
+    logici, odnosno rezultat operacije `5 / 2` je 2.5 kako
     bismo i očekivali. Drugim riječima, u Pythonu 3 ovaj problem više
     nije relevantan i u starom štivu se može ignorirati sve dok smo
     sigurni da programiramo u Pythonu 3.
 
-4.  Python 2 funkcija `input`{.python} je izbačena iz jezika, a Python 2
-    funkcija `raw\_input`{.python} je postala nova `input`{.python}
-    funkcija za Python 3. Drugim riječima, funkcija `input`{.python} se
-    jednostavno ne ponaša više kao u Pythonu 2, a stara `input`{.python}
+4.  Python 2 funkcija `input` je izbačena iz jezika, a Python 2
+    funkcija `raw\_input` je postala nova `input`
+    funkcija za Python 3. Drugim riječima, funkcija `input` se
+    jednostavno ne ponaša više kao u Pythonu 2, a stara `input`
     funkcija više ne postoji.
 
 Ostale razlike između Pythona 2 i 3 su suptilnije i početniku
