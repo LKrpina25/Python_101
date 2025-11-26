@@ -1,4 +1,4 @@
-\# Rad s tekstualnim datotekama
+# Rad s tekstualnim datotekama
 
 Rad s običnim tekstualnim datotekama važniji je no što se to možda čini
 na prvi pogled. Na primjer, svaki program nastaje kao običan tekst,
@@ -121,4 +121,5 @@ datoteka. Također, postoje slučajevi u kojima je korištenje naredbe
 \[^1\]: Za vježbu razmislite kako bismo naredbom ‘try‘ mogli
 \*garantirati\* izvršavanje pozivanje metode ‘close‘ čak i u slučaju
 ranije pogreške
+
 
