@@ -192,10 +192,6 @@ idućem poglavlju. Pregled je vidljiv u tablici
 <a href="#tab:operatori-aritmetika" data-reference-type="ref"
 data-reference="tab:operatori-aritmetika">1</a>.
 
-<div class="center">
-
-<div id="tab:operatori-aritmetika">
-
 | **operator** | **operacija** | **primjer** | **rezultat** |
 |:---|:---|:---|:---|
 | $`\boldsymbol{+}`$ | zbrajanje | $`7\:+\:2`$ | 9 |
@@ -207,10 +203,6 @@ data-reference="tab:operatori-aritmetika">1</a>.
 | $`\boldsymbol{\%}`$ | ostatak cjelobrojnog dijeljenja | $`7\:\%\:2`$ | 1 |
 
 Aritmetički operatori
-
-</div>
-
-</div>
 
 Zanimljivost kod aritmetičkih operatora je da se svi mogu spojiti s
 operatorom za pridruživanje vrijednosti varijabli (tj. `=`) kako bi se
