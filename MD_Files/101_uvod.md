@@ -220,7 +220,7 @@ aplikacija s grafičkim sučeljem, odnosno moguće ju je pokrenuti kroz
 <p align="center">
   <strong>Slika 2:</strong> Izvršavanje Python kôda putem sučelja IDLE
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle.png" alt="Slika 2:Izvršavanje Python kôda putem sučelja IDLE" width="600">
+  <img src="../Slike/idle.png" width="600">
 </p>
 
 Kada pokrenemo IDLE, dočekati će nas glavno sučelje ovog programa koje
@@ -252,7 +252,7 @@ susret s programiranjem koji ćemo kasnije podrobnije analizirati.
 <p align="center">
   <strong>Slika 3:</strong> IDLE i pisanje tekstualnih datoteka.
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text.png" alt="Slika 3: IDLE i pisanje tekstualnih datoteka">
+  <img src="../Slike/idle_text.png">
 </p>
 
 
@@ -274,7 +274,7 @@ radnje je vidljiv na slici [4](#fig-idle_text_run)
 <p align="center">
   <strong>Slika 4:</strong> IDLE i rezultat izvršavanja programa
   <br><br>
-  <img src="https://github.com/LKrpina25/Python_101/blob/main/Slike/idle_text_run.png" alt="IDLE i rezultat izvršavanja programa">
+  <img src="../Slike/idle_text_run.png">
 </p>
 
 
