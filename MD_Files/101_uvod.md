@@ -163,7 +163,7 @@ vidimo kako izgleda pokretanje instalacije novijih verzija Pythona.
 <p align="center">
   <strong>Slika 1:</strong> Instalacija Pythona na Windows OS-u
   <br><br>
-  <img src="Slike/windows_install.png" width="600">
+  <img src="../Slike/windows_install.png" width="600">
 
 </p>
 
